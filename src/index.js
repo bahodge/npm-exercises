@@ -1,6 +1,7 @@
 "use strict";
 //Import and require jQuery
 const $ = require('jquery');
+const otherJS = require('./say-hello.js');
 
 $(document).ready(() => {
 
@@ -10,8 +11,8 @@ $(document).ready(() => {
         console.log('Your code is amazing!');
     };
 
-
-
+    console.log(otherJS);
+    console.log(otherJS.calculateNumber(20));
 
     sayHello();
 
